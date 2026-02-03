@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Management</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 6px;
+            text-align: center;
+        }
+    </style>
+
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <h2>Post Management</h2>
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>TITLE</th>
+                    <th>VIEWS</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+                <!-- data render here -->
+            </tbody>
+        </table>
+    </div>
+
+    <br>
+
+    <div>
+        <!-- KHONG NHAP ID -->
+        <input type="text" id="txt_title" placeholder="title" />
+        <input type="text" id="txt_views" placeholder="views" />
+        <input type="submit" value="Save" onclick="Save()" />
+    </div>
+
+</body>
+</html>
